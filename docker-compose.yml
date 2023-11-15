@@ -1,0 +1,11 @@
+version: "3"
+services:
+  test-01:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    volumes:
+      - .:/app
+    restart: "always"
